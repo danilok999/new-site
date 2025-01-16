@@ -1,0 +1,444 @@
+@import "varebles";
+*{
+    padding:0;
+    margin:0;
+    font-family: Montserrat;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.center{
+ padding-left: 120px;
+ padding-right: 120px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    &__mobile{
+        display: none;
+    }
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+border-bottom: rgba(255, 255, 255, 0.80) 0.5px solid;
+display: flex;
+&__input{
+    color: $text_color;
+    background-color:transparent;
+width: 288px;
+height: 41px;
+border-radius:20px;
+border: 1px solid $text_color;
+outline: none;
+}
+&__input::placeholder{
+    color: $text_color;
+    padding: 32px;
+    font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+&__nav{
+    display: flex;
+    gap:32px;
+&_link{
+    font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}}   
+&__nav_link:hover{
+    text-decoration: underline;
+    transition: all 1s;
+}
+
+}
+.photo{
+    background-image: url("photos/catalog.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:400px;
+}
+.main{
+    width:35% ;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top:48px ;
+&__text{
+  margin-bottom:16px ;
+        color: $text_color;;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }}
+    .footer{
+        &__foto{
+            width: 15px;
+        }
+    }
+    @media (max-width:768px) {
+        
+        .center{
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        .main{
+            &__text{
+                font-size: 48px;
+            }
+        }
+        .memories{
+            &__header{
+                font-size: 32px;
+            }
+            &__imgs{
+                grid-template-columns: repeat(5,1fr);
+                display: grid;
+            }
+            &__img{
+                display: flex;
+                grid-column: span 2;
+                // width: 240px;
+                font-size: 24px;
+            }
+            &__img_big{
+                width: 370px;
+                grid-column: span 2;
+            }
+            
+        }
+        .prodec{
+                &_all{
+                    display: flex;
+                    // flex-wrap: wrap;
+                    gap: 20px;
+                }
+                &__cart{
+                    width: 310px;
+                }
+            } 
+    }
+    .sorting{
+        width:288px;
+height:41px;
+top: 464px;
+left: 522px;
+gap: 0px;
+border-radius: 20px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+display: flex;
+justify-content: flex-start;
+    }
+
+    .bred_carms{
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: black;
+    }
+    .catalog{
+        display: flex;
+   gap: 32px;
+   flex-wrap:wrap;
+   margin-bottom: 32px;
+   &__button{
+    border-radius: 15px;
+    width: 288px;
+    height: 42px;
+    
+   }
+   &__nav{
+    padding-top: 64px;
+    padding-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+   }
+   &__element{
+    text-decoration: none;
+   } 
+    }
+    .prodec__cart{
+        display:flex;
+        flex-direction: column;
+        width: 370px;
+        color: rgb(0, 0, 0);
+        background-color: $background_card;
+        padding:14px;
+        border-radius: 12px;
+    }
+    .cart{
+        &__header{
+            font-family: Montserrat;
+            padding-top: 20px;
+            padding-bottom: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    border-radius: 12px;
+        }
+        &__img{
+         width: 100%;   
+         height: 270px;
+        }
+        &__cost{
+            display: flex;
+            gap: 24px;
+            padding-bottom: 20px;
+        }
+        &__about{
+            padding-bottom: 13px;
+            color: gray;
+            font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+        }
+        &__cost_1{
+            color: black;
+            font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+        }
+        &__cost_2{
+            color: gray;
+            font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: line-through;
+        }
+        &__button{
+            border: none;
+            padding: 8px 36px;
+            border-radius: 12px;
+            background-color: #477EC0;
+            width: 130px;
+            height: 40px;
+            color: white;
+        }
+    }
+    .cart:hover{
+        transform: scale(1.1);
+        transition: 2s;
+    }
+    .footer{
+        padding-bottom: 32px;
+        padding-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        // width: 100%;
+        background-color: #F7F6F6;
+        color: rgb(255, 255, 255);
+        &__logo{
+            padding-right: 128px;
+        }
+    &__content{
+        color: black;
+        display: flex;
+        gap: 128px;
+    }
+    &__item{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    &_text{
+        color: rgb(110, 110, 110);
+        font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    }
+    &_header{
+        font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    }
+    }
+    &__input{
+        border-radius: 15px;
+        width:251px;
+    height:46px;
+    border: 1px solid #C4C4C4;
+    padding-left:24px;
+    }
+    &__button{
+        color: white;
+        background-color: #486A93;
+        border-radius: 15px;
+        border-radius: 15px;
+        width:275px;
+    height:46px;
+    border: 1px solid #C4C4C4;
+    }
+    &__form{
+        display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+    &__header{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16.41px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+    }
+    @media (max-width:768px){
+        .center{
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+        .prodec__cart{
+            width: 310px;
+        }
+        .catalog{
+            display: flex;
+
+        }
+        .footer{
+            padding-bottom: 32px;
+            padding-top: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #F7F6F6;
+            color: rgb(255, 255, 255);
+            &__logo{
+                display: none;
+            }
+        &__content{
+            color: black;
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        &__item{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        &_text{
+            color: rgb(110, 110, 110);
+            font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.07px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        }
+        &_header{
+            font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29.26px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        }
+        }
+        &__input{
+            border-radius: 15px;
+            width:250px;
+        height:46px;
+        border: 1px solid #C4C4C4;
+        padding-left:24px;
+        }
+        &__button{
+            color: white;
+            background-color: #486A93;
+            border-radius: 15px;
+            border-radius: 15px;
+            width:275px;
+        height:46px;
+        border: 1px solid #C4C4C4;
+        }
+        &__form{
+            display: flex;
+        flex-direction: column;
+        gap: 12px;
+        }
+        &__header{
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16.41px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            
+        }
+        }
+    }
+    @media (max-width:480px){
+        .center{
+            padding-left:16px;
+            padding-right: 16px;
+           }
+            .header{
+                justify-content: space-between;
+             &__logo{
+                display: none;
+             }   
+                &__input{
+                    display: none;
+                   
+                }
+             &__nav{
+                        display: none;
+                    }
+           &__mobile{
+
+         display: flex;
+         align-items: center;
+                gap: 320px;
+            }
+        }
+    .memories__imgs{
+            width: 100%;
+            grid-template-columns: repeat(2,1fr);
+        &__big{
+            grid-template-columns: repeat(2,1fr);
+            width: 100%;
+        }
+        }
+        .catalog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            &__content{
+                display: flex;
+                flex-wrap: wrap;
+            gap: 24px;
+            }
+        }
+        }
+    

@@ -1,0 +1,401 @@
+@import "varebles";
+button{
+    border-radius: 15px;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: Montserrat;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.center{
+ padding-left: 120px;
+ padding-right: 120px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+border-bottom: rgba(255, 255, 255, 0.80) 0.5px solid;
+display: flex;
+&__mobile{
+    display: none;
+}
+&__input{
+    color: $text_color;
+    background-color:transparent;
+width: 288px;
+height: 41px;
+border-radius:20px;
+border: 1px solid $text_color;
+outline: none;
+}
+&__input::placeholder{
+    color: $text_color;
+    padding: 32px;
+    font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+&__nav{
+    display: flex;
+    gap:32px;
+&_link{
+    font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}}   
+&__nav_link:hover{
+    text-decoration: underline;
+    transition: all 1s;
+}
+
+}
+.photo{
+    background-image: url("photos/cart_header.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:400px;
+}
+.main{
+    width:35% ;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top:48px ;
+&__text{
+  margin-bottom:16px ;
+        color: $text_color;;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }}
+    .cart{
+        display: flex;
+        margin-top: 64px;
+        gap: 32px;
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        &__discription{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            &_text{
+                font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+            }
+        }
+        .cart__form_button{
+            width:274px;
+height:45px;
+gap: 0px;
+border-radius: 20px;
+border: 1px;
+opacity: 0px;
+background: #486A93;
+color: #F7F6F6;
+        }
+        &__input{
+            border: none;
+            background-color: #F7F6F6;
+            border-radius: 6px;
+            font-family: Poppins;
+font-size: 14px;
+font-weight: 600;
+line-height: 29.4px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+border-bottom: 1px solid #CACDD8 ;
+        }
+        &__card{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        border-top: solid 0.5px #CACDD8;
+        &__form_button{
+            width: 274px;
+height: 45px;
+top: 1451px;
+left: 81px;
+gap: 0px;
+opacity: 0px;
+        }
+        }
+        &__left{
+            display: flex;
+            gap:32px;
+            &_photo{
+                width: 170px;
+                height: 170px;
+            }
+        }
+        &__form{
+            width:379px;
+height:450px;
+top: 464px;
+left: 941px;
+gap: 0px;
+border: none;
+border-radius: 20px 0px 0px 0px;
+border-bottom: 0.5px solid #CACDD8;
+            background-color: #F7F6F6;
+            &_header{
+                font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.26px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;}
+&_input{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+width: 288px;
+border: none;
+border-bottom: 0.5px solid #CACDD8;
+background-color: transparent;
+}
+&__button{
+    width:274px;
+height:37pxpx;
+top: 835px;
+left: 994px;
+padding: 10px 77px 10px 77px;
+gap: 10px;
+border-radius: 50px 0px 0px 0px;
+opacity: 0px;
+}          
+}
+        &__buttons{
+            margin-top:42px;
+            margin-bottom:64px;
+        }
+        &__delete{
+            font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+width:200px;
+height:37px;
+top: 983px;
+left: 117px;
+padding: 10px 33px 10px 32px;
+gap: 10px;
+border-radius: 50px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background-color: white;
+        }}
+
+    .cart{
+        &__header{
+            font-family: Montserrat;
+            padding-top: 20px;
+            padding-bottom: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    border-radius: 12px;
+        }
+        &__img{
+         width: 100%;   
+         height: 270px;
+        }
+        &__cost{
+            display: flex;
+            gap: 24px;
+            padding-bottom: 20px;
+        }
+        &__about{
+            padding-bottom: 13px;
+            color: gray;
+            font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+        }
+        &__cost_1{
+            color: black;
+            font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+        }}
+        .card{
+            &__form{
+                background-color: #F7F6F6;
+                padding-top: 42px;
+                padding-right: 24px;
+                padding-left: 24px;
+                padding-bottom: 42px;
+                height: 450px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+            }
+        }
+    .footer{
+        padding-bottom: 32px;
+        padding-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        // width: 100%;
+        background-color: #F7F6F6;
+        color: rgb(255, 255, 255);
+        &__logo{
+            padding-right: 128px;
+        }
+    &__content{
+        color: black;
+        display: flex;
+        gap: 128px;
+    }
+    &__item{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    &_text{
+        color: rgb(110, 110, 110);
+        font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    }
+    &_header{
+        font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    }
+    }
+    &__input{
+        border-radius: 15px;
+        width:251px;
+    height:46px;
+    border: 1px solid #C4C4C4;
+    padding-left:24px;
+    }
+    &__button{
+        width: 275px;
+        height: 46px;
+        top: 2003px;
+        left: 1051px;
+        gap: 0px;
+        opacity: 0px;
+        background-color: #486A93;      
+        color: white;  
+    }
+    &__form{
+        display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+    &__header{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16.41px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+}
+@media(max-width:768px){
+    .photo{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .cart{
+        display: flex;
+        flex-wrap: wrap;
+        // width: 100%;
+
+    }
+    .card{
+        &__form{
+            display: flex;
+        }
+    }
+    .footer{
+        &__logo{
+            display: none;
+        }
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .header{
+        &__input{
+            display: none;
+        }
+        &__logo{
+            display: none;
+        }
+        &__nav{
+            display: none;
+        }     
+    }
+    
+
+    .header__mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer{
+        width: 100%;
+        &__logo{
+            display: none;
+        }
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
